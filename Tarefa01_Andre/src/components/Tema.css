@@ -1,0 +1,31 @@
+.tema {
+    padding: 2rem;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .tema.light {
+    background-color: #f0f0f0;
+    color: #222;
+  }
+  
+  .tema.dark {
+    background-color: #222;
+    color: #f0f0f0;
+  }
+  
+  .tema button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid currentColor;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tema button:hover {
+    background-color: currentColor;
+    color: inherit;
+  }
