@@ -12,6 +12,7 @@ import vambre from './assets/Vambre.png'
 import vegeta from './assets/Vedita.png'
 import caraquetentoufuraromadara from './assets/CaraQueTentouFurarOMadara.png'
 import pastorjunior from './assets/PastorJunior.png'
+import dracula from './assets/Dracula.png'
 
 function App() {
   const [selecionado, setSelecionado] = useState(null)
@@ -28,6 +29,7 @@ function App() {
           <Card imagem={vegeta} nome="Vegeta" onClick={() => setSelecionado({imagem: vegeta, descricao: "Vedita!! Carregou duas esferas do Puronga."})}/>
           <Card imagem={caraquetentoufuraromadara} nome="Cara que tentou furar o Madara" onClick={() => setSelecionado({imagem: caraquetentoufuraromadara, descricao: "Ele tentou furar o Madara."})}/>
           <Card imagem={pastorjunior} nome="Pastor Júnior" onClick={() => setSelecionado({imagem: pastorjunior, descricao: "Pode? Pode!"})}/>
+          <Card imagem={dracula} nome="Dracula" onClick={() => setSelecionado({imagem: dracula, descricao: "Haha Jonathan, you are banging my daughter"})}/>
         </Galeria>
 
         {selecionado && (<Detalhe imagem={selecionado.imagem} descricao={selecionado.descricao} onClose={() => setSelecionado(null)}/>)}
