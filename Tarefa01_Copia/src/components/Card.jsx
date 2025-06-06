@@ -2,7 +2,7 @@ import './Card.css'
 
 export default function Card(props) {
   return (
-    <div class="card">
+    <div className="card" onClick={props.onClick}>
       <figure>
         <img 
           src={props.imagem} alt="Imagem abstrata" />
