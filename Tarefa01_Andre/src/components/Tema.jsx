@@ -1,19 +1,24 @@
-import React, { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './Tema.css'
 
-export default function Tema() {
-  const [darkMode, setDarkMode] = useState(false)
+export default function Tema ({children}) {
+    const [darkMode, setDarkMode] = useState(false)
 
-  const toggleTheme = () => {
-    setDarkMode(!darkMode);
-  }
+    const alternarTema = () => {
+        setDarkMode(!darkMode)
+    }
 
-  return (
-    <div className={darkMode ? 'tema dark' : 'tema light'}>
-      <h1>{darkMode ? 'Modo Escuro' : 'Modo Claro'}</h1>
-      <button onClick={toggleTheme}>
-        Mudar para {darkMode ? 'Light Mode' : 'Dark Mode'}
-      </button>
-    </div>
-  );
+    useEffect (() => {
+        document.body.className = darkMode ? 'tema dark' : 'tema light'}, [darkMode])
+
+    return (
+        <div className="tema-container">
+            <button onClick={alternarTema}>
+                Mudar para Modo {darkMode ? 'Claro' : 'Escuro'}
+            </button>
+            <div className='conteudo'>
+                {children}
+            </div>
+        </div>
+    )
 }
