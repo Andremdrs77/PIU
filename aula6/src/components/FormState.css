@@ -1,0 +1,8 @@
+button {
+    transition: 20s;
+}
+
+button:hover {
+    padding: 75vh;
+    transition: 20s;
+}
