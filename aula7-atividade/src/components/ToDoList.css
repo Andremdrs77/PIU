@@ -1,0 +1,32 @@
+form input {
+    margin: 20px;
+    padding: 10px;
+}
+
+ul li {
+    list-style: none;
+}
+
+button {
+    padding: 1em 2em;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff00cc, #3333ff);
+    color: white;
+    cursor: pointer;
+    transition: all 2s ease-in-out;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    transform: rotate(0deg) scale(1);
+}
+
+button:hover {
+    padding: 50vh 50vw;
+    font-size: 5rem;
+    background: conic-gradient(from 0deg, red, orange, yellow, green, blue, indigo, violet, red);
+    color: black;
+    border-radius: 50%;
+    box-shadow: 0 0 100px 50px #ff00ff;
+    transform: rotate(1440deg) scale(3) skew(45deg, 10deg);
+    transition: all 5s cubic-bezier(0.1, 1, 0.8, 1);
+}

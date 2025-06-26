@@ -1,5 +1,4 @@
 import { useState } from "react"
-import "./FormState.css"
 
 export default function FormState() {
     const [name, setName] = useState('');
