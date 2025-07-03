@@ -1,0 +1,29 @@
+input {
+    padding: 15px;
+    margin-inline: 2px;
+    border-radius: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.Tarefa {
+    display: flex;
+    min-width: 550px;
+    margin: 10px;
+    padding-block: 10px;
+    padding-inline: 20px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(164, 177, 172);
+    border-radius: 10px
+}
+
+.TarefaButton {
+    margin-left: 5px;
+}
+
+select {
+    height: 30px;
+}
