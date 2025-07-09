@@ -8,7 +8,6 @@ export default function ListaTarefas() {
     const [focoIndex, setFocoIndex] = useState(null);
     const [tema, setTema] = useState("escuro");
 
-    // Aplicar tema diretamente (sem useEffect)
     document.body.classList.remove("tema-claro", "tema-escuro");
     document.body.classList.add(`tema-${tema}`);
 
@@ -83,7 +82,7 @@ export default function ListaTarefas() {
                         <button className="TarefaButton" onClick={() => atualizarFiltro("concluido")}>Filtrar por concluídas</button>
                         <button className="TarefaButton" onClick={() => atualizarFiltro("andamento")}>Filtrar por em andamento</button>
                         <button className="TarefaButton" onClick={() => atualizarFiltro("naoiniciado")}>Filtrar por não iniciadas</button>
-                        <button className="TarefaButton" onClick={() => atualizarFiltro("all")}>Remover filtro</button>
+                        <button className="TarefaButton" style={{outline: 'none'}} onClick={() => atualizarFiltro("all")}>Remover filtro</button>
                     </div>
                 )}
             </div>
