@@ -28,6 +28,7 @@ export default function RepoJson() {
   }, []); // O array vazio garante que o efeito execute apenas uma vez
 
   if (loading) {
+    handleColor()
     return <p>Carregando...</p>;
   }
 
